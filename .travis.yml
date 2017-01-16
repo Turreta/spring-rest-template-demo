@@ -1,4 +1,4 @@
 language: java
 jdk:
   - oraclejdk8
-script: cd common-dto-api &&  mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 -DskipTests=true && mvn test -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 && cd ../com-turreta-soademo-configserver &&  mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 -DskipTests=true && mvn test -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 && cd ../com-turreta-soademo-clientservice &&  mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 -DskipTests=true && mvn test -Dmaven.compiler.target=8 -Dmaven.compiler.source=8
+script: cd common-dto-api && mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 && cd ../com-turreta-soademo-configserver &&  mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8 && cd ../com-turreta-soademo-clientservice &&  mvn install -Dmaven.compiler.target=8 -Dmaven.compiler.source=8
