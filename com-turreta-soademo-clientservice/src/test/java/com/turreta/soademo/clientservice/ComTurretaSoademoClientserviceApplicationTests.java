@@ -20,7 +20,11 @@ public class ComTurretaSoademoClientserviceApplicationTests {
 	}
 
 
+	/*
+	 * We are not testing this in github.
+	 */
 	@Test
+	@Ignore
 	public void test01() {
 		RestTemplate restTemplate = new RestTemplate();
 
@@ -35,6 +39,4 @@ public class ComTurretaSoademoClientserviceApplicationTests {
 
 		Assert.assertTrue(response.getStatusCode()==HttpStatus.OK);
 	}
-
-
 }
